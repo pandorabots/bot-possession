@@ -8,7 +8,7 @@ Requirements
 
 1. Pandorabots `app_id` and `user_key` (register with the [Developer Portal](https://developer.pandorabots.com))
 
-2. Firebase account and application URI
+2. [Firebase](https://www.firebase.com/) account and application URI
 
 Workflow
 --------
@@ -25,7 +25,6 @@ The three interfaces all listen for additions to Firebase, and will change state
 
 `type: "unposses"` - tells the user interface that the conversation has been returned to the bot
 
-Each object also contains the `client_name` associated with the user.
 
 Cookies
 -------
