@@ -29,4 +29,4 @@ The three interfaces all listen for additions to Firebase, and will change state
 Cookies
 -------
 
-This code uses on [talk.js](https://github.com/pandorabots/talk.js), which relies on cookies to remember the identity of your users. Therefore, you must host these files on a server, or enable file cookies in your browser to run locally.
+This code uses [talk.js](https://github.com/pandorabots/talk.js), which relies on cookies to remember the identity of your users. Therefore, you must host these files on a server, or enable file cookies in your browser to run locally.
