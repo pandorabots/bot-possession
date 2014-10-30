@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>User Chat</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
+  <script type="text/javascript" src="js/talk.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body id="user" onload="doStart('INIT CONVO');">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Customer Service Chat</h1>
+      <p>
+        <span class="key-item"><i class="fa fa-user bot"></i> = Virtual representative, <span class="key-item"><i class="fa fa-user agent"></i> = Human representative
+      </p>
+      <input id="yousay" class="form-control" placeholder="Say something..." onkeydown="if (event.keyCode == 13) { doTalk(); }" autofocus>
+      <div id="convo"></div>
+    </div>
+  </div>
+  
+  </div>
+  <footer>
+    <div class="container">
+      <hr>
+      <div id="pb-credits" class="pull-right">
+        &copy <a href="http://www.pandorabots.com">Pandorabots, Inc.</a> 2014. 
+        All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

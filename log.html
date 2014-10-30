@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <title>Dialog Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
+  <script type="text/javascript" src="js/log.js"></script>
+</head>
+<body id="log">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Realtime dialog page</h1>
+      <p>
+        This page streams a log of all of your user's conversations. Click on a <code>client_name</code> to possess a conversation.
+      </p>
+      <div id="convo"></div>
+      <div id="controls">
+        <button id="deletebutton" class="btn btn-danger" onclick="doRemove();">
+          <i class="fa fa-trash"></i> Delete all logs
+        </button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <hr>
+      <div id="pb-credits" class="pull-right">
+        &copy <a href="http://www.pandorabots.com">Pandorabots, Inc.</a> 2014. 
+        All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

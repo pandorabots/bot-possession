@@ -1,0 +1,63 @@
+body {
+    padding: 50px;
+}
+
+/* Log Styles */
+
+#log #convo {
+    margin-top: 15px;
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 4px;
+    
+}
+
+#log #convo p {
+    margin-bottom: 0px;
+}
+
+#log #convo p.response {
+    margin-bottom: 10px;
+}
+
+#log #convo .date {
+    font-size: 9px;
+}
+
+/* User and Agent Styles */
+
+#yousay {
+    width: 30%;
+}
+
+#convo {
+    margin-top: 15px;
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 4px;   
+}
+
+#convo p {
+    margin-bottom: 0px;
+}
+
+/* Universal Styles */
+
+#controls {
+    margin-top: 15px;
+}
+
+.bot {
+    color: #428bca;
+}
+
+.agent {
+    color: #5cb85c;
+}
+
+
+

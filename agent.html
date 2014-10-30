@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>Agent Chat</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
+  <script type="text/javascript" src="js/talk.js"></script>
+  <script type="text/javascript" src="js/agent.js"></script>
+</head>
+<body id="agent" onunload="togglePossession();">
+  <div class="container">
+    <div class="jumbotron">
+      <h1 id="title">Conversation with</h1>
+      <p>
+        Use this interface to talk directly to your clients. Closing the page will end possession of the bot.
+      </p>
+      <input id="yousay" class="form-control" placeholder="Say Something..." onkeydown="if (event.keyCode == 13) { doChat(); }" autofocus>
+      <div id="convo"></div>
+      <div id="controls">
+        <button id="toggle" class="btn btn-danger" onclick="togglePossession()">
+          <i class="fa fa-times-circle"></i> End Possession
+        </button> 
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <hr>
+      <div id="pb-credits" class="pull-right">
+        &copy <a href="http://www.pandorabots.com">Pandorabots, Inc.</a> 2014. 
+        All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    var title = document.getElementById("title");
+    title.innerHTML = title.innerHTML + " " + possessedClientName;
+  </script>
+</body>
+</html>
