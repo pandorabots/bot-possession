@@ -1,7 +1,7 @@
 Bot Possession Boilerplate
 ==========================
 
-Bot possession allows you to monitor conversations between your Pandorabot and users in realtime, with the option to "take over" the conversation at any time. Please read [this blog post](http://blog.pandorabots.com/bot-possession/) for the main gist.
+Bot possession allows you to monitor conversations between your Pandorabot and users in realtime, with the option to "take over" the conversation at any time. Please read [this blog post](https://medium.com/pandorabots-blog/bot-possession-a-customer-service-solution-18fced1a6080#.a9kobr8ih) for the main gist.
 
 Requirements
 ------------
